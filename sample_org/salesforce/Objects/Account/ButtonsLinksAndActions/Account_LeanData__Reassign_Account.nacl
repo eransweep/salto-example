@@ -1,0 +1,14 @@
+salesforce.WebLink Account_LeanData__Reassign_Account {
+  fullName = "Account.LeanData__Reassign_Account"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Reassign Account"
+  openType = "noSidebar"
+  page = "LeanData__ReassignAccountAndChildren"
+  protected = false
+  _parent = [
+    salesforce.Account,
+  ]
+}

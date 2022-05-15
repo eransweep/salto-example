@@ -1,0 +1,5 @@
+workspace {
+  uid = "c5c472ee-444e-48ae-ba5f-ad2aea74cb17"
+  name = "salto-env"
+  staleStateThresholdMinutes = undefined
+}

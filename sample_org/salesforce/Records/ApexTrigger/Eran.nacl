@@ -1,0 +1,11 @@
+salesforce.ApexTrigger Eran {
+  apiVersion = 53
+  status = "Active"
+  fullName = "Eran"
+  content = file("salesforce/Records/ApexTrigger/Eran.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+}

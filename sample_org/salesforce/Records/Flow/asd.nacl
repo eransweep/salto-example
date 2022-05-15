@@ -1,0 +1,92 @@
+salesforce.Flow asd {
+  fullName = "asd"
+  apiVersion = 53
+  assignments = [
+    {
+      name = "adfff"
+      label = "adfff"
+      locationX = 176
+      locationY = 551
+      assignmentItems = [
+        {
+          assignToReference = "$Record.BillingCity"
+          operator = "Assign"
+          value = {
+            stringValue = "2"
+          }
+        },
+      ]
+    },
+    {
+      name = "asdasd"
+      label = "asdasd"
+      locationX = 176
+      locationY = 311
+      assignmentItems = [
+        {
+          assignToReference = "$Record.BillingCity"
+          operator = "Assign"
+          value = {
+            stringValue = "123"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "X1232"
+      }
+    },
+    {
+      name = "X1232"
+      label = "1232"
+      locationX = 176
+      locationY = 431
+      assignmentItems = [
+        {
+          assignToReference = "$Record.BillingCountry"
+          operator = "Assign"
+          value = {
+            stringValue = "123"
+          }
+        },
+      ]
+      connector = {
+        targetReference = "adfff"
+      }
+    },
+  ]
+  description = "new"
+  interviewLabel = "asd {!$Flow.CurrentDateTime}"
+  label = "asd"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "asdasd"
+    }
+    object = salesforce.Account
+    recordTriggerType = "Create"
+    triggerType = "RecordBeforeSave"
+  }
+  status = "Draft"
+}

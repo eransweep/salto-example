@@ -1,0 +1,22 @@
+salesforce.LightningPage Hello_World_UtilityBar {
+  fullName = "Hello_World_UtilityBar"
+  flexiPageRegions = [
+    {
+      name = "utilityItems"
+      type = "Region"
+    },
+    {
+      name = "backgroundComponents"
+      type = "Background"
+    },
+  ]
+  masterLabel = "Hello World UtilityBar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+    properties = {
+      name = "isLeftAligned"
+      value = "true"
+    }
+  }
+  type = "UtilityBar"
+}

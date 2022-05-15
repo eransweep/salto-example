@@ -1,0 +1,6 @@
+salesforce.ApexClass eran {
+  apiVersion = 53
+  status = "Active"
+  fullName = "eran"
+  content = file("salesforce/Records/ApexClass/eran.cls")
+}

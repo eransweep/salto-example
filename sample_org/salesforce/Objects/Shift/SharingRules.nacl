@@ -1,0 +1,6 @@
+salesforce.SharingRules Shift {
+  fullName = "Shift"
+  _parent = [
+    salesforce.Shift,
+  ]
+}

@@ -1,0 +1,25 @@
+salesforce.ConnectedApp Customer_Order_Status {
+  fullName = "Customer_Order_Status"
+  contactEmail = "help.desk@mycompany.com"
+  description = "Connected app to securely access customer order status"
+  iconUrl = "https://login.salesforce.com/logos/Standard/case_transcript/icon.png"
+  label = "Customer Order Status"
+  logoUrl = "https://login.salesforce.com/logos/Standard/case_transcript/logo.svg"
+  oauthConfig = {
+    callbackUrl = "https://openidconnect.herokuapp.com/callback"
+    consumerKey = "3MVG9sh10GGnD4DuC3rJtfGP0vTuomMuZPxv9loYhl0apuX9z.uetG8ajtDA5FM18vPhs.eJ_n7H0DZrPlVr2"
+    isAdminApproved = true
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = [
+      "Api",
+      "Web",
+      "OpenID",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "BYPASS_2FACTOR"
+    refreshTokenPolicy = "zero"
+  }
+  profileName = "Custom: Support Profile"
+}

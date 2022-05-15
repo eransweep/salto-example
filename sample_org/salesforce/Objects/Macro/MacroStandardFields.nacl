@@ -1,0 +1,872 @@
+type salesforce.Macro {
+  serviceid Id {
+    apiName = "Macro.Id"
+    label = "Macro ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Macro.OwnerId"
+    label = "Owner ID"
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "Owner"
+    queryable = true
+    _hidden_value = true
+    trackHistory = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Macro.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "Macro.Name"
+    label = "Macro Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Macro.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Macro.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Macro.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Macro.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Macro.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Html Description {
+    apiName = "Macro.Description"
+    label = "Description"
+    createable = true
+    updateable = true
+    length = 4096
+    queryable = true
+  }
+  salesforce.Checkbox IsAlohaSupported {
+    apiName = "Macro.IsAlohaSupported"
+    label = "Supports Classic"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsLightningSupported {
+    apiName = "Macro.IsLightningSupported"
+    label = "Supports Lightning"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist StartingContext {
+    apiName = "Macro.StartingContext"
+    label = "Apply To"
+    valueSet = [
+      {
+        fullName = "LeanData__A2B_Group__c"
+        default = false
+        label = "A2B Group"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Access_Level_Assignment__c"
+        default = false
+        label = "Access Level Assignment"
+        isActive = true
+      },
+      {
+        fullName = "Account"
+        default = false
+        label = "Account"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Account_Search__c"
+        default = false
+        label = "Account Search"
+        isActive = true
+      },
+      {
+        fullName = "ActiveScratchOrg"
+        default = false
+        label = "Active Scratch Org"
+        isActive = true
+      },
+      {
+        fullName = "AlternativePaymentMethod"
+        default = false
+        label = "Alternative Payment Method"
+        isActive = true
+      },
+      {
+        fullName = "ApiAnomalyEventStore"
+        default = false
+        label = "API Anomaly Event Store"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__API_Metric__c"
+        default = false
+        label = "API Metric"
+        isActive = true
+      },
+      {
+        fullName = "AppointmentTopicTimeSlot"
+        default = false
+        label = "Appointment Topic Time Slot"
+        isActive = true
+      },
+      {
+        fullName = "Asset"
+        default = false
+        label = "Asset"
+        isActive = true
+      },
+      {
+        fullName = "AssetRelationship"
+        default = false
+        label = "Asset Relationship"
+        isActive = true
+      },
+      {
+        fullName = "AssignedResource"
+        default = false
+        label = "Assigned Resource"
+        isActive = true
+      },
+      {
+        fullName = "AuthorizationForm"
+        default = false
+        label = "Authorization Form"
+        isActive = true
+      },
+      {
+        fullName = "AuthorizationFormConsent"
+        default = false
+        label = "Authorization Form Consent"
+        isActive = true
+      },
+      {
+        fullName = "AuthorizationFormDataUse"
+        default = false
+        label = "Authorization Form Data Use"
+        isActive = true
+      },
+      {
+        fullName = "AuthorizationFormText"
+        default = false
+        label = "Authorization Form Text"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Buyer_Persona__c"
+        default = false
+        label = "Buyer Persona"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Campaign_Influence_Summary__c"
+        default = false
+        label = "Campaign Influence Summary"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Campaign_Opportunity__c"
+        default = false
+        label = "Campaign Opportunity"
+        isActive = true
+      },
+      {
+        fullName = "CardPaymentMethod"
+        default = false
+        label = "Card Payment Method"
+        isActive = true
+      },
+      {
+        fullName = "Case"
+        default = false
+        label = "Case"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__CC_Inserted_Object__c"
+        default = false
+        label = "CC Inserted Object"
+        isActive = true
+      },
+      {
+        fullName = "CommSubscription"
+        default = false
+        label = "Communication Subscription"
+        isActive = true
+      },
+      {
+        fullName = "CommSubscriptionChannelType"
+        default = false
+        label = "Communication Subscription Channel Type"
+        isActive = true
+      },
+      {
+        fullName = "CommSubscriptionConsent"
+        default = false
+        label = "Communication Subscription Consent"
+        isActive = true
+      },
+      {
+        fullName = "CommSubscriptionTiming"
+        default = false
+        label = "Communication Subscription Timing"
+        isActive = true
+      },
+      {
+        fullName = "ConsumptionSchedule"
+        default = false
+        label = "Consumption Schedule"
+        isActive = true
+      },
+      {
+        fullName = "Contact"
+        default = false
+        label = "Contact"
+        isActive = true
+      },
+      {
+        fullName = "ContactPointAddress"
+        default = false
+        label = "Contact Point Address"
+        isActive = true
+      },
+      {
+        fullName = "ContactPointEmail"
+        default = false
+        label = "Contact Point Email"
+        isActive = true
+      },
+      {
+        fullName = "ContactPointPhone"
+        default = false
+        label = "Contact Point Phone"
+        isActive = true
+      },
+      {
+        fullName = "Contract"
+        default = false
+        label = "Contract"
+        isActive = true
+      },
+      {
+        fullName = "CredentialStuffingEventStore"
+        default = false
+        label = "Credential Stuffing Event Store"
+        isActive = true
+      },
+      {
+        fullName = "CreditMemo"
+        default = false
+        label = "Credit Memo"
+        isActive = true
+      },
+      {
+        fullName = "DataUsePurpose"
+        default = false
+        label = "Data Use Purpose"
+        isActive = true
+      },
+      {
+        fullName = "DigitalWallet"
+        default = false
+        label = "Digital Wallet"
+        isActive = true
+      },
+      {
+        fullName = "EngagementChannelType"
+        default = false
+        label = "Engagement Channel Type"
+        isActive = true
+      },
+      {
+        fullName = "eran__c"
+        default = false
+        label = "eran"
+        isActive = true
+      },
+      {
+        fullName = "eran_test__c"
+        default = false
+        label = "eran test"
+        isActive = true
+      },
+      {
+        fullName = "Event"
+        default = false
+        label = "Event"
+        isActive = true
+      },
+      {
+        fullName = "FeedItem"
+        default = false
+        label = "Feed Item"
+        isActive = true
+      },
+      {
+        fullName = "CollaborationGroup"
+        default = false
+        label = "Group"
+        isActive = true
+      },
+      {
+        fullName = "Image"
+        default = false
+        label = "Image"
+        isActive = true
+      },
+      {
+        fullName = "Individual"
+        default = false
+        label = "Individual"
+        isActive = true
+      },
+      {
+        fullName = "Invoice"
+        default = false
+        label = "Invoice"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Business_Unit__c"
+        default = false
+        label = "LD Business Unit"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_JSON_Search__c"
+        default = false
+        label = "LD JSON Search"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Long_Log__c"
+        default = false
+        label = "LD Long Log"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Member__c"
+        default = false
+        label = "LD Member"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Partner__c"
+        default = false
+        label = "LD Partner"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Partner_Callout__c"
+        default = false
+        label = "LD Partner Callout"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Partner_Log__c"
+        default = false
+        label = "LD Partner Log"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Partner_Metadata__c"
+        default = false
+        label = "LD Partner Metadata"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Territory__c"
+        default = false
+        label = "LD Territory"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Territory_Geo__c"
+        default = false
+        label = "LD Territory Geo"
+        isActive = true
+      },
+      {
+        fullName = "Lead"
+        default = false
+        label = "Lead"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Lead_Conversion__c"
+        default = false
+        label = "Lead Conversion"
+        isActive = true
+      },
+      {
+        fullName = "Lead_Details__c"
+        default = false
+        label = "Lead Details"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Lead_Search__c"
+        default = false
+        label = "Lead Search"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__LD_Search__c"
+        default = false
+        label = "LeanData Search"
+        isActive = true
+      },
+      {
+        fullName = "LegalEntity"
+        default = false
+        label = "Legal Entity"
+        isActive = true
+      },
+      {
+        fullName = "Location"
+        default = false
+        label = "Location"
+        isActive = true
+      },
+      {
+        fullName = "LocationGroup"
+        default = false
+        label = "Location Group"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Log__c"
+        default = false
+        label = "Log"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Long_Text_Setting__c"
+        default = false
+        label = "Long Text Setting"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Marketing_Touch__c"
+        default = false
+        label = "Marketing Touch"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Mass_Convert_Lead__c"
+        default = false
+        label = "Mass Convert Lead"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Matching_Token__c"
+        default = false
+        label = "Matching Token"
+        isActive = true
+      },
+      {
+        fullName = "MessagingSession"
+        default = false
+        label = "Messaging Session"
+        isActive = true
+      },
+      {
+        fullName = "MessagingEndUser"
+        default = false
+        label = "Messaging User"
+        isActive = true
+      },
+      {
+        fullName = "NamespaceRegistry"
+        default = false
+        label = "Namespace Registry"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__One_Time_Buyer_Persona_History__c"
+        default = false
+        label = "OneTimeBuyerPersonaHistory"
+        isActive = true
+      },
+      {
+        fullName = "OperatingHours"
+        default = false
+        label = "Operating Hours"
+        isActive = true
+      },
+      {
+        fullName = "Opportunity"
+        default = false
+        label = "Opportunity"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Opportunity_Campaign_Member__c"
+        default = false
+        label = "Opportunity Campaign Member"
+        isActive = true
+      },
+      {
+        fullName = "OpportunityContactRole"
+        default = false
+        label = "Opportunity Contact Role"
+        isActive = true
+      },
+      {
+        fullName = "Order"
+        default = false
+        label = "Order"
+        isActive = true
+      },
+      {
+        fullName = "PartyConsent"
+        default = false
+        label = "Party Consent"
+        isActive = true
+      },
+      {
+        fullName = "Payment"
+        default = false
+        label = "Payment"
+        isActive = true
+      },
+      {
+        fullName = "PaymentAuthorization"
+        default = false
+        label = "Payment Authorization"
+        isActive = true
+      },
+      {
+        fullName = "PaymentAuthAdjustment"
+        default = false
+        label = "Payment Authorization Adjustment"
+        isActive = true
+      },
+      {
+        fullName = "PaymentGateway"
+        default = false
+        label = "Payment Gateway"
+        isActive = true
+      },
+      {
+        fullName = "PaymentGatewayLog"
+        default = false
+        label = "Payment Gateway Log"
+        isActive = true
+      },
+      {
+        fullName = "PaymentLineInvoice"
+        default = false
+        label = "Payment Line Invoice"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Potential_Match__c"
+        default = false
+        label = "Potential Match"
+        isActive = true
+      },
+      {
+        fullName = "Product2"
+        default = false
+        label = "Product"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Quarterly_Metric__c"
+        default = false
+        label = "Quarterly Metric"
+        isActive = true
+      },
+      {
+        fullName = "LocationWaitlist"
+        default = false
+        label = "Queue"
+        isActive = true
+      },
+      {
+        fullName = "LocWaitlistMsgTemplate"
+        default = false
+        label = "Queue Messaging Template"
+        isActive = true
+      },
+      {
+        fullName = "ContentDocumentListViewMapping"
+        default = false
+        label = "Quip Document from List View"
+        isActive = true
+      },
+      {
+        fullName = "Refund"
+        default = false
+        label = "Refund"
+        isActive = true
+      },
+      {
+        fullName = "RefundLinePayment"
+        default = false
+        label = "Refund Line Payment"
+        isActive = true
+      },
+      {
+        fullName = "ReportAnomalyEventStore"
+        default = false
+        label = "Report Anomaly Event Store"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Reporting_Log__c"
+        default = false
+        label = "Reporting Log"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Reporting_Setting__c"
+        default = false
+        label = "Reporting Setting"
+        isActive = true
+      },
+      {
+        fullName = "ResourceAbsence"
+        default = false
+        label = "Resource Absence"
+        isActive = true
+      },
+      {
+        fullName = "ReturnOrder"
+        default = false
+        label = "Return Order"
+        isActive = true
+      },
+      {
+        fullName = "ReturnOrderLineItem"
+        default = false
+        label = "Return Order Line Item"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Round_Robin_Pool__c"
+        default = false
+        label = "Round Robin Pool"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Round_Robin_Schedule_Setting__c"
+        default = false
+        label = "Round Robin Schedule Setting"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Round_Robin_Setting__c"
+        default = false
+        label = "Round Robin Setting"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Round_Robin_Setting_Lock__c"
+        default = false
+        label = "Round Robin Setting Lock"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Routing_Deployment__c"
+        default = false
+        label = "Routing Deployment"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Routing_Graph__c"
+        default = false
+        label = "Routing Graph"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Routing_Metric__c"
+        default = false
+        label = "Routing Metric"
+        isActive = true
+      },
+      {
+        fullName = "ScratchOrgInfo"
+        default = false
+        label = "Scratch Org Info"
+        isActive = true
+      },
+      {
+        fullName = "ServiceAppointment"
+        default = false
+        label = "Service Appointment"
+        isActive = true
+      },
+      {
+        fullName = "ServiceResource"
+        default = false
+        label = "Service Resource"
+        isActive = true
+      },
+      {
+        fullName = "ServiceTerritory"
+        default = false
+        label = "Service Territory"
+        isActive = true
+      },
+      {
+        fullName = "ServiceTerritoryWorkType"
+        default = false
+        label = "Service Territory Work Type"
+        isActive = true
+      },
+      {
+        fullName = "SessionHijackingEventStore"
+        default = false
+        label = "Session Hijacking Event Store"
+        isActive = true
+      },
+      {
+        fullName = "Shift"
+        default = false
+        label = "Shift"
+        isActive = true
+      },
+      {
+        fullName = "Sticker__c"
+        default = false
+        label = "Sticker"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Tagging_Log__c"
+        default = false
+        label = "Tagging Log"
+        isActive = true
+      },
+      {
+        fullName = "Task"
+        default = false
+        label = "Task"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Temporary_Marketing_Touch__c"
+        default = false
+        label = "Temporary Marketing Touch"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Territory_Segment__c"
+        default = false
+        label = "Territory Segment"
+        isActive = true
+      },
+      {
+        fullName = "ThreatDetectionFeedback"
+        default = false
+        label = "Threat Detection Feedback"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Time_To_Action_Tracker__c"
+        default = false
+        label = "Time-to-Action Tracker"
+        isActive = true
+      },
+      {
+        fullName = "LeanData__Upload_Lead__c"
+        default = false
+        label = "Upload Lead"
+        isActive = true
+      },
+      {
+        fullName = "User"
+        default = false
+        label = "User"
+        isActive = true
+      },
+      {
+        fullName = "WorkType"
+        default = false
+        label = "Work Type"
+        isActive = true
+      },
+      {
+        fullName = "WorkTypeGroup"
+        default = false
+        label = "Work Type Group"
+        isActive = true
+      },
+      {
+        fullName = "WorkTypeGroupMember"
+        default = false
+        label = "Work Type Group Member"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

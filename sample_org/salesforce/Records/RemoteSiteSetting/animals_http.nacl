@@ -1,0 +1,7 @@
+salesforce.RemoteSiteSetting animals_http {
+  fullName = "animals_http"
+  description = "Trailhead animal service: HTTP"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://th-apex-http-callout.herokuapp.com"
+}

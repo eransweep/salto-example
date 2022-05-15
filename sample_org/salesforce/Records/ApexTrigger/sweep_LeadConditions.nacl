@@ -1,0 +1,11 @@
+salesforce.ApexTrigger sweep_LeadConditions {
+  apiVersion = 53
+  status = "Active"
+  fullName = "sweep_LeadConditions"
+  content = file("salesforce/Records/ApexTrigger/sweep_LeadConditions.trigger")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+  ]
+}

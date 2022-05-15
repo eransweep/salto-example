@@ -1,0 +1,14 @@
+salesforce.WebLink Campaign_LeanData__Campaign_Influence {
+  fullName = "Campaign.LeanData__Campaign_Influence"
+  availability = "online"
+  displayType = "button"
+  height = 600
+  linkType = "page"
+  masterLabel = "Campaign Influence"
+  openType = "noSidebar"
+  page = "LeanData__CampaignToOpportunity"
+  protected = false
+  _parent = [
+    salesforce.Campaign,
+  ]
+}

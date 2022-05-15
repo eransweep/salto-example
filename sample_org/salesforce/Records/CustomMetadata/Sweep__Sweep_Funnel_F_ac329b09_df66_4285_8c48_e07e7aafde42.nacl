@@ -1,0 +1,92 @@
+salesforce.CustomMetadata Sweep__Sweep_Funnel_F_ac329b09_df66_4285_8c48_e07e7aafde42@uuuvuuuuu {
+  label = "Test funnel"
+  protected = false
+  fullName = "Sweep__Sweep_Funnel.F_ac329b09_df66_4285_8c48_e07e7aafde42"
+  values = [
+    {
+      field = "Sweep__Funnel_Details__c"
+      value = '''
+{
+    "apiName": "F_ac329b09-df66-4285-8c48-e07e7aafde42",
+    "firstStageName": "MQL",
+    "stages": [
+        {
+            "stageName": "MQL",
+            "stageDescription": "MQL Stage",
+            "branchIndex": 0,
+            "objectName": "Lead",
+            "fieldName": "Status",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": [
+                {
+                    "nextStage": "SQL",
+                    "criteria": [],
+                    "criteriaLogic": "",
+                    "nextStageType": "Stage",
+                    "isAutoMoveToNextStage": false
+                }
+            ]
+        },
+        {
+            "stageName": "SQL",
+            "stageDescription": "SQL Stage",
+            "branchIndex": 0,
+            "objectName": "Lead",
+            "fieldName": "Status",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": [
+                {
+                    "nextStage": "Selling",
+                    "criteria": [],
+                    "criteriaLogic": "",
+                    "nextStageType": "Stage",
+                    "isAutoMoveToNextStage": false
+                }
+            ]
+        },
+        {
+            "stageName": "WON",
+            "stageDescription": "WON Stage",
+            "branchIndex": 0,
+            "objectName": "Opportunity",
+            "fieldName": "StageName",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": []
+        },
+        {
+            "stageName": "Selling",
+            "stageDescription": "",
+            "branchIndex": 0,
+            "objectName": "Opportunity",
+            "fieldName": "StageName",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": [
+                {
+                    "nextStage": "WON",
+                    "criteria": [],
+                    "criteriaLogic": "",
+                    "nextStageType": "Stage",
+                    "isAutoMoveToNextStage": false
+                }
+            ]
+        }
+    ]
+}
+'''
+      type = "xsd:string"
+    },
+    {
+      field = "Sweep__Is_Distribution__c"
+      value = "false"
+      type = "xsd:boolean"
+    },
+  ]
+}

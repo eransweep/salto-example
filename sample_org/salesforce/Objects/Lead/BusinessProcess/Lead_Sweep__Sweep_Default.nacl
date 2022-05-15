@@ -1,0 +1,25 @@
+salesforce.BusinessProcess Lead_Sweep__Sweep_Default@uuus {
+  fullName = "Lead.Sweep__Sweep Default"
+  isActive = true
+  values = [
+    {
+      fullName = "Closed - Converted"
+      default = false
+    },
+    {
+      fullName = "Closed - Not Converted"
+      default = false
+    },
+    {
+      fullName = "Open - Not Contacted"
+      default = true
+    },
+    {
+      fullName = "Working - Contacted"
+      default = false
+    },
+  ]
+  _parent = [
+    salesforce.Lead,
+  ]
+}

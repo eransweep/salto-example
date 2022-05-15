@@ -1,0 +1,8 @@
+salesforce.CustomTab Sticker__c {
+  fullName = "Sticker__c"
+  customObject = true
+  motif = "Custom42: Treasure chest"
+  _parent = [
+    salesforce.Sticker__c,
+  ]
+}

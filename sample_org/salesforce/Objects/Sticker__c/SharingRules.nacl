@@ -1,0 +1,6 @@
+salesforce.SharingRules Sticker__c {
+  fullName = "Sticker__c"
+  _parent = [
+    salesforce.Sticker__c,
+  ]
+}

@@ -1,0 +1,11 @@
+salesforce.CustomTab Hello {
+  fullName = "Hello"
+  label = "Hello"
+  motif = "Custom33: Desk"
+  page = "Greeting"
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexPage.instance.Greeting
+    },
+  ]
+}

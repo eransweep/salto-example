@@ -1,0 +1,19 @@
+type salesforce.Lead_Details__c {
+  salesforce.MasterDetail Account__c {
+    apiName = "Lead_Details__c.Account__c"
+    label = "Account"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Lead_Detailses"
+    queryable = true
+    externalId = false
+    relationshipLabel = "Lead Detailses"
+    trackTrending = false
+  }
+}

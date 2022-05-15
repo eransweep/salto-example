@@ -1,0 +1,156 @@
+type salesforce.Contact {
+  salesforce.Picklist Level__c {
+    apiName = "Contact.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Secondary"
+        default = false
+        label = "Secondary"
+      },
+      {
+        fullName = "Tertiary"
+        default = false
+        label = "Tertiary"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text Languages__c {
+    apiName = "Contact.Languages__c"
+    label = "Languages"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__LD_Segment__c {
+    apiName = "Contact.LeanData__LD_Segment__c"
+    label = "LD Segment"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Lookup LeanData__Matched_Buyer_Persona__c {
+    apiName = "Contact.LeanData__Matched_Buyer_Persona__c"
+    label = "Matched Buyer Persona"
+    referenceTo = [
+      "LeanData__Buyer_Persona__c",
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Contacts"
+    queryable = true
+    deleteConstraint = "SetNull"
+    deprecated = false
+    externalId = false
+    relationshipLabel = "Contacts"
+    trackFeedHistory = false
+  }
+  salesforce.Number LeanData__Modified_Score__c {
+    apiName = "Contact.LeanData__Modified_Score__c"
+    label = "Modified Score"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__Routing_Action__c {
+    apiName = "Contact.LeanData__Routing_Action__c"
+    label = "Routing Action"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 64
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__Status_Info__c {
+    apiName = "Contact.LeanData__Status_Info__c"
+    label = "State Info"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text Sweep__Funnel_Name__c {
+    apiName = "Contact.Sweep__Funnel_Name__c"
+    label = "Funnel Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist sfFieldNamePick6826__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+    ]
+    label = "sfFieldNamePick6826"
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+    apiName = "Contact.sfFieldNamePick6826__c"
+  }
+}

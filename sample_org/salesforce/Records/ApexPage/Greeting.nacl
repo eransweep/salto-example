@@ -1,0 +1,8 @@
+salesforce.ApexPage Greeting {
+  apiVersion = 52
+  availableInTouch = false
+  confirmationTokenRequired = false
+  label = "Greeting"
+  fullName = "Greeting"
+  content = file("salesforce/Records/ApexPage/Greeting.page")
+}

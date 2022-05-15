@@ -1,0 +1,158 @@
+type salesforce.CartCheckoutSession {
+  serviceid Id {
+    apiName = "CartCheckoutSession.Id"
+    label = "Cart Checkout Session ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CartCheckoutSession.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "CartCheckoutSession.Name"
+    label = "Name"
+    _required = true
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CartCheckoutSession.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CartCheckoutSession.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CartCheckoutSession.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CartCheckoutSession.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CartCheckoutSession.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup WebCartId {
+    apiName = "CartCheckoutSession.WebCartId"
+    label = "Cart ID"
+    _required = true
+    referenceTo = [
+      salesforce.WebCart,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "WebCart"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text State {
+    apiName = "CartCheckoutSession.State"
+    label = "State"
+    _required = true
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+  }
+  salesforce.Text NextState {
+    apiName = "CartCheckoutSession.NextState"
+    label = "Next State"
+    createable = false
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 30
+    queryable = true
+  }
+  salesforce.Checkbox IsProcessing {
+    apiName = "CartCheckoutSession.IsProcessing"
+    label = "Is Processing"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup BackgroundOperationId {
+    apiName = "CartCheckoutSession.BackgroundOperationId"
+    label = "Background Operation ID"
+    referenceTo = [
+      "BackgroundOperation",
+    ]
+    createable = false
+    updateable = true
+    relationshipName = "BackgroundOperation"
+    queryable = true
+  }
+  salesforce.Checkbox IsArchived {
+    apiName = "CartCheckoutSession.IsArchived"
+    label = "Is Archived"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OrderId {
+    apiName = "CartCheckoutSession.OrderId"
+    label = "Order ID"
+    referenceTo = [
+      salesforce.Order,
+    ]
+    createable = false
+    updateable = true
+    relationshipName = "Order"
+    queryable = true
+  }
+  salesforce.Checkbox IsError {
+    apiName = "CartCheckoutSession.IsError"
+    label = "Is Error"
+    defaultValue = false
+    createable = false
+    updateable = true
+    queryable = true
+  }
+}

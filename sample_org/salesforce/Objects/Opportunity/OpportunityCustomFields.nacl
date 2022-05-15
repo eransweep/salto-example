@@ -1,0 +1,183 @@
+type salesforce.Opportunity {
+  salesforce.Picklist DeliveryInstallationStatus__c {
+    apiName = "Opportunity.DeliveryInstallationStatus__c"
+    label = "Delivery/Installation Status"
+    valueSet = [
+      {
+        fullName = "In progress"
+        default = false
+        label = "In progress"
+      },
+      {
+        fullName = "Yet to begin"
+        default = false
+        label = "Yet to begin"
+      },
+      {
+        fullName = "Completed"
+        default = false
+        label = "Completed"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Text TrackingNumber__c {
+    apiName = "Opportunity.TrackingNumber__c"
+    label = "Tracking Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 12
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Text OrderNumber__c {
+    apiName = "Opportunity.OrderNumber__c"
+    label = "Order Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 8
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Opportunity.CurrentGenerators__c"
+    label = "Current Generator(s)"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Text MainCompetitors__c {
+    apiName = "Opportunity.MainCompetitors__c"
+    label = "Main Competitor(s)"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Number LeanData__Days_In_Stage__c {
+    apiName = "Opportunity.LeanData__Days_In_Stage__c"
+    label = "Days in Stage"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Picklist LeanData__Reporting_Opportunity_Source__c {
+    apiName = "Opportunity.LeanData__Reporting_Opportunity_Source__c"
+    label = "Reporting Opportunity Source"
+    valueSet = [
+      {
+        fullName = "Marketing Sourced"
+        default = false
+        label = "Marketing Sourced"
+      },
+      {
+        fullName = "Marketing Influenced"
+        default = false
+        label = "Marketing Influenced"
+      },
+      {
+        fullName = "Sales Only"
+        default = false
+        label = "Sales Only"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+    sorted = false
+  }
+  salesforce.Number LeanData__Reporting_Total_Marketing_Touches__c {
+    apiName = "Opportunity.LeanData__Reporting_Total_Marketing_Touches__c"
+    label = "Reporting Total Marketing Touches"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    externalId = true
+    unique = false
+    queryable = true
+    deprecated = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Text LeanData__Routing_Action__c {
+    apiName = "Opportunity.LeanData__Routing_Action__c"
+    label = "Routing Action"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 32
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Text LeanData__Status_Info__c {
+    apiName = "Opportunity.LeanData__Status_Info__c"
+    label = "State Info"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+  salesforce.Text Sweep__Funnel_Name__c {
+    apiName = "Opportunity.Sweep__Funnel_Name__c"
+    label = "Funnel Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+    trackTrending = false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "salto-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@salto-io/adapter-api": "^0.3.14",
+    "@salto-io/adapter-utils": "^0.3.14",
+    "@salto-io/core": "^0.3.14",
+    "@salto-io/workspace": "^0.3.14",
+    "jest-environment-node": "^27.5.1",
+    "typescript": "^4.6.3"
+  }
+}

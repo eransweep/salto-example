@@ -1,0 +1,63 @@
+salesforce.CustomMetadata Sweep__Sweep_Funnel_F_340d9d6c_77fd_4fd9_82d3_6bbdd93c0dbd@uuuvuuuuu {
+  label = "Eran"
+  protected = false
+  fullName = "Sweep__Sweep_Funnel.F_340d9d6c_77fd_4fd9_82d3_6bbdd93c0dbd"
+  values = [
+    {
+      field = "Sweep__Funnel_Details__c"
+      value = '''
+{
+    "stages": [
+        {
+            "stageName": "MQL",
+            "objectName": "Lead",
+            "fieldName": "Status",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": [
+                {
+                    "nextStage": "SQL",
+                    "criteria": [],
+                    "criteriaLogic": "",
+                    "nextStageType": "Stage"
+                }
+            ]
+        },
+        {
+            "stageName": "SQL",
+            "objectName": "Opportunity",
+            "fieldName": "StageName",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": [
+                {
+                    "nextStage": "WON",
+                    "criteria": [],
+                    "criteriaLogic": "",
+                    "nextStageType": "Stage"
+                }
+            ]
+        },
+        {
+            "stageName": "WON",
+            "objectName": "Opportunity",
+            "fieldName": "StageName",
+            "entryInits": [],
+            "exitInits": [],
+            "assignmentRules": [],
+            "exitCriteria": []
+        }
+    ]
+}
+'''
+      type = "xsd:string"
+    },
+    {
+      field = "Sweep__Is_Distribution__c"
+      value = "false"
+      type = "xsd:boolean"
+    },
+  ]
+}

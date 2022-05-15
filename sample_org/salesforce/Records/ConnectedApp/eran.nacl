@@ -1,0 +1,24 @@
+salesforce.ConnectedApp eran {
+  fullName = "eran"
+  contactEmail = "eran.kirshenboim@gmail.com"
+  label = "eran-remote"
+  oauthConfig = {
+    callbackUrl = '''
+http://localhost:3000/salesforce-oauth2-redirect
+https://app.sweep.io/salesforce-oauth2-redirect
+https://staging.app.sweep.io/salesforce-oauth2-redirect
+'''
+    consumerKey = "3MVG9sh10GGnD4DuC3rJtfGP0vf1sfrpHgLgWFzofe9IyQNHMS7ba.eq9u40qjIuUFWHZvOnF6fVjWlOJwI6a"
+    isAdminApproved = false
+    isConsumerSecretOptional = false
+    isIntrospectAllTokens = false
+    scopes = [
+      "Full",
+      "RefreshToken",
+    ]
+  }
+  oauthPolicy = {
+    ipRelaxation = "ENFORCE"
+    refreshTokenPolicy = "infinite"
+  }
+}

@@ -1,0 +1,278 @@
+type salesforce.CartItem {
+  serviceid Id {
+    apiName = "CartItem.Id"
+    label = "Cart Item ID"
+    queryable = true
+    _hidden_value = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CartItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "CartItem.Name"
+    label = "Cart Item Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CartItem.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CartItem.CreatedById"
+    label = "Created By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "CreatedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CartItem.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CartItem.LastModifiedById"
+    label = "Last Modified By ID"
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    relationshipName = "LastModifiedBy"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CartItem.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CartId {
+    apiName = "CartItem.CartId"
+    label = "Cart ID"
+    _required = true
+    referenceTo = [
+      salesforce.WebCart,
+    ]
+    createable = true
+    updateable = false
+    relationshipName = "Cart"
+    queryable = true
+  }
+  salesforce.Lookup CartDeliveryGroupId {
+    apiName = "CartItem.CartDeliveryGroupId"
+    label = "Cart Delivery Group ID"
+    _required = true
+    referenceTo = [
+      salesforce.CartDeliveryGroup,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "CartDeliveryGroup"
+    queryable = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "CartItem.Product2Id"
+    label = "Product ID"
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Product2"
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "CartItem.Type"
+    label = "Type"
+    valueSet = [
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+        isActive = true
+      },
+      {
+        fullName = "Charge"
+        default = false
+        label = "Charge"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Sku {
+    apiName = "CartItem.Sku"
+    label = "SKU"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Number Quantity {
+    apiName = "CartItem.Quantity"
+    label = "Quantity"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Currency ListPrice {
+    apiName = "CartItem.ListPrice"
+    label = "List Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency SalesPrice {
+    apiName = "CartItem.SalesPrice"
+    label = "Sales Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency UnitAdjustmentAmount {
+    apiName = "CartItem.UnitAdjustmentAmount"
+    label = "Unit Adjustment Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency UnitAdjustedPrice {
+    apiName = "CartItem.UnitAdjustedPrice"
+    label = "Unit Adjusted Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency TotalListPrice {
+    apiName = "CartItem.TotalListPrice"
+    label = "Total List Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency TotalLineAmount {
+    apiName = "CartItem.TotalLineAmount"
+    label = "Total Line Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Summary TotalLineTaxAmount {
+    apiName = "CartItem.TotalLineTaxAmount"
+    label = "Total Line Tax Amount"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency AdjustmentAmount {
+    apiName = "CartItem.AdjustmentAmount"
+    label = "Adjustment Amount quantity based"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency AdjustmentTaxAmount {
+    apiName = "CartItem.AdjustmentTaxAmount"
+    label = "Adjustment Tax Amount"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency TotalPrice {
+    apiName = "CartItem.TotalPrice"
+    label = "Total Price"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Currency TotalTaxAmount {
+    apiName = "CartItem.TotalTaxAmount"
+    label = "Total Tax Amount"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAmount {
+    apiName = "CartItem.TotalAmount"
+    label = "Total Amount"
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentAmount {
+    apiName = "CartItem.TotalAdjustmentAmount"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalPriceAfterAllAdjustments {
+    apiName = "CartItem.TotalPriceAfterAllAdjustments"
+    queryable = false
+    updateable = false
+    createable = false
+    _hidden_value = true
+  }
+}

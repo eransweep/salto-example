@@ -1,0 +1,25 @@
+salesforce.CustomApplication Hello_World {
+  fullName = "Hello_World"
+  brand = {
+    headerColor = "#0070D2"
+    shouldOverrideOrgTheme = false
+  }
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Hello World"
+  navType = "Standard"
+  tabs = [
+    salesforce.CustomTab.instance.Hello,
+  ]
+  uiType = "Lightning"
+  utilityBar = "Hello_World_UtilityBar"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Hello_World_UtilityBar
+    },
+  ]
+}

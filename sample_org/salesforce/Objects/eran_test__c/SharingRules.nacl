@@ -1,0 +1,6 @@
+salesforce.SharingRules eran_test__c {
+  fullName = "eran_test__c"
+  _parent = [
+    salesforce.eran_test__c,
+  ]
+}

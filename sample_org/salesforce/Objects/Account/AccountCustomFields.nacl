@@ -1,0 +1,224 @@
+type salesforce.Account {
+  salesforce.Picklist CustomerPriority__c {
+    apiName = "Account.CustomerPriority__c"
+    label = "Customer Priority"
+    valueSet = [
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist SLA__c {
+    apiName = "Account.SLA__c"
+    label = "SLA"
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Bronze"
+        default = false
+        label = "Bronze"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Picklist Active__c {
+    apiName = "Account.Active__c"
+    label = "Active"
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+      {
+        fullName = "eran"
+        default = false
+        label = "eran"
+      },
+      {
+        fullName = "Ori"
+        default = false
+        label = "Ori"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Account.NumberofLocations__c"
+    label = "Number of Locations"
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Picklist UpsellOpportunity__c {
+    apiName = "Account.UpsellOpportunity__c"
+    label = "Upsell Opportunity"
+    valueSet = [
+      {
+        fullName = "Maybe"
+        default = false
+        label = "Maybe"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+    sorted = false
+  }
+  salesforce.Text SLASerialNumber__c {
+    apiName = "Account.SLASerialNumber__c"
+    label = "SLA Serial Number"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Date SLAExpirationDate__c {
+    apiName = "Account.SLAExpirationDate__c"
+    label = "SLA Expiration Date"
+    createable = true
+    updateable = true
+    queryable = true
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__LD_EmailDomains__c {
+    apiName = "Account.LeanData__LD_EmailDomains__c"
+    label = "LD_EmailDomains"
+    createable = true
+    updateable = true
+    unique = true
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    description = "Derived Email Domains from contact emails"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__Routing_Action__c {
+    apiName = "Account.LeanData__Routing_Action__c"
+    label = "Routing Action"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 32
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__Search__c {
+    apiName = "Account.LeanData__Search__c"
+    label = "LeanData Search"
+    createable = true
+    updateable = true
+    unique = true
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    description = "LeanData search field"
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text LeanData__Status_Info__c {
+    apiName = "Account.LeanData__Status_Info__c"
+    label = "State Info"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+  salesforce.Text Sweep__Funnel_Name__c {
+    apiName = "Account.Sweep__Funnel_Name__c"
+    label = "Funnel Name"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    deprecated = false
+    externalId = false
+    trackFeedHistory = false
+  }
+}

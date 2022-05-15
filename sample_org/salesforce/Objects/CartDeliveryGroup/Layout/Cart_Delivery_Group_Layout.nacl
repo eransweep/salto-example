@@ -1,0 +1,17 @@
+salesforce.Layout CartDeliveryGroup_Cart_Delivery_Group_Layout@bsss {
+  fullName = "CartDeliveryGroup-Cart Delivery Group Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.CartDeliveryGroup,
+  ]
+}

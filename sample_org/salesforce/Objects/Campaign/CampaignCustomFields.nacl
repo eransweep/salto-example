@@ -1,0 +1,202 @@
+type salesforce.Campaign {
+  salesforce.Checkbox LeanData__Back_Dated__c {
+    apiName = "Campaign.LeanData__Back_Dated__c"
+    label = "Back-Dated"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_LT_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_LT_Attribution__c"
+    label = "LD LT Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_LT_Bookings_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_LT_Bookings_Attribution__c"
+    label = "LD LT Bookings Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_LT_Generated_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_LT_Generated_Attribution__c"
+    label = "LD LT Generated Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_LT_Generated_Bookings_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_LT_Generated_Bookings_Attribution__c"
+    label = "LD LT Generated Bookings Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_MT_Accelerated_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_MT_Accelerated_Attribution__c"
+    label = "LD MT Accelerated Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_MT_Accelerated_Bookings_Attr__c {
+    apiName = "Campaign.LeanData__Rep_MT_Accelerated_Bookings_Attr__c"
+    label = "LD MT Accelerated Bookings Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_MT_Generated_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_MT_Generated_Attribution__c"
+    label = "LD MT Generated Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Rep_MT_Generated_Bookings_Attribution__c {
+    apiName = "Campaign.LeanData__Rep_MT_Generated_Bookings_Attribution__c"
+    label = "LD MT Generated Bookings Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Number LeanData__Reporting_Average_Days_To_Close__c {
+    apiName = "Campaign.LeanData__Reporting_Average_Days_To_Close__c"
+    label = "Reporting Average Days to Close"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Reporting_Bookings_Attribution__c {
+    apiName = "Campaign.LeanData__Reporting_Bookings_Attribution__c"
+    label = "LD MT Bookings Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Reporting_Cost__c {
+    apiName = "Campaign.LeanData__Reporting_Cost__c"
+    label = "Reporting Cost"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Reporting_FT_Attribution_Amount__c {
+    apiName = "Campaign.LeanData__Reporting_FT_Attribution_Amount__c"
+    label = "LD FT Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Reporting_FT_Bookings_Attribution__c {
+    apiName = "Campaign.LeanData__Reporting_FT_Bookings_Attribution__c"
+    label = "LD FT Bookings Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Currency LeanData__Reporting_MT_Attribution_Amount__c {
+    apiName = "Campaign.LeanData__Reporting_MT_Attribution_Amount__c"
+    label = "LD MT Attribution"
+    createable = true
+    updateable = true
+    scale = 3
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Number LeanData__Reporting_Number_Of_Opportunities__c {
+    apiName = "Campaign.LeanData__Reporting_Number_Of_Opportunities__c"
+    label = "Reporting Number of Opportunities"
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Number LeanData__Reporting_Number_Of_Touches__c {
+    apiName = "Campaign.LeanData__Reporting_Number_Of_Touches__c"
+    label = "Reporting Number of Touches"
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+  salesforce.Percent LeanData__Reporting_Opportunity_Close_Rate__c {
+    apiName = "Campaign.LeanData__Reporting_Opportunity_Close_Rate__c"
+    label = "Reporting Opportunity Close Rate"
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    deprecated = false
+    externalId = false
+  }
+}

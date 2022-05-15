@@ -1,0 +1,34 @@
+type salesforce.eran__c {
+  salesforce.MasterDetail eran_account__c {
+    apiName = "eran__c.eran_account__c"
+    label = "eran account"
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "erans"
+    queryable = true
+    externalId = false
+    relationshipLabel = "erans"
+    trackTrending = false
+  }
+  salesforce.Lookup eran_lead__c {
+    apiName = "eran__c.eran_lead__c"
+    label = "eran lead"
+    referenceTo = [
+      salesforce.Lead,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "erans"
+    queryable = true
+    deleteConstraint = "SetNull"
+    externalId = false
+    relationshipLabel = "erans"
+    trackTrending = false
+  }
+}

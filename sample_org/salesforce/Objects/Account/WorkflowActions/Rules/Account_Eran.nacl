@@ -1,0 +1,15 @@
+salesforce.WorkflowRule Account_Eran@v {
+  fullName = "Account.Eran"
+  active = false
+  criteriaItems = [
+    {
+      field = salesforce.Account.field.Site
+      operation = "notEqual"
+      value = "88"
+    },
+  ]
+  triggerType = "onCreateOrTriggeringUpdate"
+  _parent = [
+    salesforce.Account,
+  ]
+}

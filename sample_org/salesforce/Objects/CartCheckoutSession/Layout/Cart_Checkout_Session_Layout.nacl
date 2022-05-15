@@ -1,0 +1,46 @@
+salesforce.Layout CartCheckoutSession_Cart_Checkout_Session_Layout@bsss {
+  fullName = "CartCheckoutSession-Cart Checkout Session Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CartCheckoutSession.field.WebCartId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CartCheckoutSession.field.IsProcessing
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CartCheckoutSession.field.State
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.CartCheckoutSession,
+  ]
+}

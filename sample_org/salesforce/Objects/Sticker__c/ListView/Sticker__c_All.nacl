@@ -1,0 +1,8 @@
+salesforce.ListView Sticker__c_All {
+  fullName = "Sticker__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Sticker__c,
+  ]
+}
