@@ -153,4 +153,269 @@ type salesforce.Contact {
     sorted = false
     apiName = "Contact.sfFieldNamePick6826__c"
   }
+  salesforce.Picklist sfFieldNamePick17__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick17__c"
+  }
+  salesforce.Picklist sfFieldNamePick33__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick33__c"
+  }
+  salesforce.Picklist sfFieldNamePick0__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick0__c"
+  }
+  salesforce.Picklist sfFieldNamePick48__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick48__c"
+  }
+  salesforce.Picklist sfFieldNamePick8__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick8__c"
+  }
+  salesforce.Picklist sfFieldNamePick38__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick38__c"
+  }
+  salesforce.Picklist sfFieldNamePick10__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick10__c"
+  }
+  salesforce.Picklist sfFieldNamePick50__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick50__c"
+  }
+  salesforce.Picklist sfFieldNamePick18__c {
+    valueSet = [
+      {
+        fullName = "New"
+        default = false
+        label = "New"
+      },
+      {
+        fullName = "MQL"
+        default = false
+        label = "MQL"
+      },
+      {
+        fullName = "SQL"
+        default = false
+        label = "SQL"
+      },
+      {
+        fullName = "ClosedWon"
+        default = false
+        label = "Closed - Won"
+      },
+      {
+        fullName = "NewSQL"
+        default = false
+        label = "NEW-SQL"
+      },
+    ]
+    apiName = "Contact.sfFieldNamePick18__c"
+  }
 }
